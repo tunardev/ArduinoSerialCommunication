@@ -33,10 +33,12 @@ class Program
         }
         catch (Exception ex)
         {
+            // Error handling
             Console.WriteLine("Error: " + ex.Message);
         }
         finally
         {
+            // Close serial port
             serialPort.Close();
         }
     }
